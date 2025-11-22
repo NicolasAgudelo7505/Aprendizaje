@@ -1,0 +1,1 @@
+esta carpeta será utilizada para manejar los proyectos grandes que tenga, haciendo uso de las herramientas tales como Python, JavaScript, React, Angular, Flutter, etc
