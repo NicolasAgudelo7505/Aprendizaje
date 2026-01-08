@@ -3,7 +3,7 @@ void main () {
   final int hp =180;
   final bool isAlive=true;
   final List<String> abilities =['impostor'];  
-  final sprites =<String>                               ['ditto/front.png','ditto/back.png'];
+  final sprites =<String> ['ditto/front.png','ditto/back.png'];
   
 // dynamico ==null
   

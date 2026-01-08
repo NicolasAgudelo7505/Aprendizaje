@@ -13,6 +13,6 @@ void main (){
 Future<String> httpGet (String url){
   return Future.delayed(const Duration(seconds: 1),(){
     throw 'Error en la petición htpp';
-    return 'respuesta de la petición http';
+    // return 'respuesta de la petición http';
   });
 }
