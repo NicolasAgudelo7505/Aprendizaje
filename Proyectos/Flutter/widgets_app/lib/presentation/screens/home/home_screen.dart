@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gifs_app/config/menu/menu_items.dart';
+import 'package:gifs_app/presentation/screens/buttons/buttons_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -51,7 +52,12 @@ class _CustomListTitle extends StatelessWidget {
       title: Text(menuItem.subTitle),
       subtitle: Text(menuItem.subTitle),
       onTap: () {
-        //  TODO navegar a otra pantalla
+        Navigator.of(context).push(
+          MaterialPageRoute<void>(
+            builder: (context) => const ButtonsScreen(),
+      ),
+  );
+
       },
     );
   }
