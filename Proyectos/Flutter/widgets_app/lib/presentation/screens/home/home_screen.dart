@@ -53,7 +53,7 @@ class _CustomListTitle extends StatelessWidget {
     return ListTile(
       leading: Icon(menuItem.icon, color:colors.primary),
       trailing: Icon(Icons.arrow_forward_ios_rounded, color: colors.primary,),
-      title: Text(menuItem.subTitle),
+      title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       onTap: () {
         // navegación de flutter---------------------------------------------
