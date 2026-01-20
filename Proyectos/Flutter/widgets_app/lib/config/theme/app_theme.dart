@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
   const colorList=<Color>[
     Colors.blue,
-    Colors.pink,
+    Color.fromARGB(255, 186, 81, 116),
     Colors.grey,
     Colors.yellow,
     Colors.purple,
