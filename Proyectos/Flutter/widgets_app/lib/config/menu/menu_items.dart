@@ -57,4 +57,10 @@ MenuItem(
     link: '/tutorial',
     icon:Icons.accessibility_rounded
   ),
+MenuItem(
+    title: 'Infinite scroll y pull',
+    subTitle: 'listas infinitas y pull to refresh',
+    link: '/infinite',
+    icon:Icons.list_alt_outlined
+  ),
 ];
