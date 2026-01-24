@@ -69,5 +69,11 @@ MenuItem(
     link: '/infinite',
     icon:Icons.list_alt_outlined
   ),
+MenuItem(
+    title: 'cambiar tema',
+    subTitle: 'cambiar temas de la aplicación',
+    link: '/theme-changer',
+    icon:Icons.color_lens_outlined
+  ),
 
 ];
