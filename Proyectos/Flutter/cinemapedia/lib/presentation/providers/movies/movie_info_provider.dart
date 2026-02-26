@@ -21,8 +21,6 @@ class MovieMapNotifier extends Notifier<Map<String, Movie>> {
     if (state[movieId] != null) return;
 
     final movieRepository = ref.read(movieRepositoryProvider);
-    print('Realizando petición http');
-
     final movie = await movieRepository.getMovieById(movieId);
 
     state = {
