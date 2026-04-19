@@ -1,9 +1,14 @@
 ---
-import MainLayouts from "../layouts/MainLayout.astro";
-
-
+import CustomTitle from "../components/CustomTitle.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayouts title="About Page">
+<MainLayout title="About Page">
   <h1>About page</h1>
-</MainLayouts>
+  <CustomTitle title="This is a custom title" />
+</MainLayout>
+<style>
+  h1 {
+    color: blue;
+  }
+</style>

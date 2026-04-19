@@ -1,9 +1,6 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import CustomTitle from "../components/CustomTitle.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-
-// import MainLayout from '../layouts/MainLayout.astro';
-
 // Server Only
 const name = "Nicolás Agudelo";
 const title = "Home Page";
@@ -12,7 +9,7 @@ const currentDate = new Date();
 ---
 
 <MainLayout title="Home Page">
-  <h1>{name}</h1>
+  <CustomTitle title=`${name}`></CustomTitle>
   <p>Momento actual: {currentDate.toLocaleTimeString()}</p>
   <p id="current-time">Momento actual real:</p>
 
