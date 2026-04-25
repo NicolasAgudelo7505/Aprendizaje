@@ -1,6 +1,6 @@
 ---
+import {ClientRouter } from 'astro:transitions';
 import Navbar from "../components/Navbar.astro";
-
 import '../styles/global.css'
 
 interface Props {
@@ -10,7 +10,6 @@ interface Props {
 
 const {title}= Astro.props;
 ---
-const {}= Astro.props
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -18,9 +17,12 @@ const {}= Astro.props
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+        <ClientRouter></ClientRouter>
     </head>
     <body>
         <Navbar />
-        <slot></slot>
+        <main>
+            <slot></slot>
+        </main>
     </body>
 </html>
