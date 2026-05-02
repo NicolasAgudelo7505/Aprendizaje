@@ -85,7 +85,7 @@ List<Movie> _jsonToMovies(Map<String,dynamic> json){
   }
   
   @override
-  Future<List> searchMovies(String query) async {
+  Future<List<Movie>> searchMovies(String query) async {
   final response= await dio.get('/search/movie',
     queryParameters: {
       'query':query
